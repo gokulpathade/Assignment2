@@ -93,12 +93,7 @@ const EmployeeList = ({ onEdit }) => {
                             onClick={() => handleDialogOpen(employee.id)}  color="error">
                                 Delete
                             </Button>
-                            <Button  style={{
-                                padding: '8px 16px', marginRight: '8px',
-                            }} 
-                             onClick={() => handleDialogOpen(employee.id)}  color="success">
-                                EMAIL
-                            </Button>
+                           
                         </ListItemSecondaryAction>
                     </ListItem>
                 ))}

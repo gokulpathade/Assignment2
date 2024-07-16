@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import api from '../../config/ApiConfig';
+
 import {
     Container,
     Button,
@@ -18,7 +19,9 @@ import {
     Snackbar,
     Alert
 } from '@mui/material';
+
 import axios from 'axios';
+
 import { useForm } from 'react-hook-form';
 
 const VendorRegister = () => {
@@ -146,7 +149,7 @@ const VendorRegister = () => {
                                 <TableCell>
                                     <Button onClick={() => handleOpen(vendor)}>Edit</Button>
                                     <Button color="error" onClick={() => handleDeleteOpen(vendor)}>Delete</Button>
-                                    <Button onClick={() => handleEmailOpen(vendor)}>Send Email</Button>
+                                    {/* <Button onClick={() => handleEmailOpen(vendor)}>Send Email</Button> */}
                                 </TableCell>
                             </TableRow>
                         ))}
